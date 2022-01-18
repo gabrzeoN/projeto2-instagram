@@ -1,1 +1,38 @@
+body{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1900px;
+}
 
+.header{
+    background-color: red;
+    width: 1366px;
+    height: 54px;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.content{
+    background-color: blue;
+    height: 1000px;
+    width: 900px;
+}
+
+.main-bar{
+
+}
+
+.stories{
+    background-color: tomato;
+    width: 614px;
+    height: 118px;
+}
+
+.feed{
+
+}
+
+.side-bar{
+
+}
