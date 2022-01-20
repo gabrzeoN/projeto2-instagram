@@ -1,50 +1,57 @@
 body{
-    background-color: yellow;
+    background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 1900px;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 .header{
-    background-color: red;
-    width: 1366px;
-    width: 100%;
+    background-color: white;
     height: 54px;
     border-bottom: 1px solid #DBDBDB;
 
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 
     position: fixed;
     top: 0px;
+    left: 0px;
+    right: 0px;
 
 }
 
 .inside-header{
-    background-color: red;
-    width: 1366px;
-    width: 100%;
+    width: 914px;
     height: 54px;
-    border-bottom: 1px solid #DBDBDB;
-
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     position: fixed;
     top: 0px;
 
+    margin: 0px auto;
+
 }
 
-.header > div{
+.inside-header > div{
+    height: 28px;
+
     display: flex;
-    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.identification{
+    width: 155px;
 }
 
 .vertical-divider{
-    background-color: chartreuse;
+    background-color: #DBDBDB;
     width: 1px;
     height: 22px;
 }
@@ -55,17 +62,31 @@ body{
 }
 
 .search-bar{
-    background-color: rgb(237, 100, 207);
-    height: 28px;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
     width: 215px;
+
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+}
+
+.interaction{
+    width: 155px;
 }
 
 .content{
     background-color: blue;
-    height: 1000px;/*apagar dps*/
-    width: 914px;/*apagar dps*/
+    /*height: 1000px;apagar dps*/
+    /*width: 914px;apagar dps*/
     display: flex;
     margin-top: calc(55px + 34px);/* header + natural distance*/
+}
+
+.content img{
+    width: 56px;
 }
 
 .main-bar{
@@ -76,43 +97,141 @@ body{
     background-color: tomato;
     width: 614px;
     height: 118px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.story{
+
 }
 
 .feed{
 background-color: cadetblue;
 height: 700px;/*apagar dps*/
 width: 614px;/*apagar dps*/
+margin-top: 24px;
 }
 
 .side-bar{
 background-color: chartreuse;
-height: 300px;
-width: 300px;
+/*height: 300px;apagar dps*/
+width: 293px;
+margin-left: 29px;
 }
 
+.side-bar h4{
+    color: #262626;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.profile{
+    background-color: thistle;
+    display: flex;
+    align-items: center;
+}
+
+.profile img{
+    margin: 23px 0px;
+}
+
+.profile h4{
+    margin-left: 17px;
+}
+
+.profile h5{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    margin-left: 17px;
+}
+
+.suggestion-divider{
+    background-color: tomato;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestion-divider h4{
+    color: #8E8E8E;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.suggestion-divider h5{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+
+
+.suggestion{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.suggestion img{
+    width: 32px;
+}
+
+.suggestion h4{
+
+}
+
+.suggestion h5{
+
+}
+
+.suggestion h5{
+
+}
+
+
+
+/****************** ICONS **********************/
 .logo-instagram{
-    width: 11.23px;
-    height: 11.23px;
-
-
+    width: 23px;
+    height: 23px;
 }
 
 .paper-plane-outline{
-    width: 11.23px;
-    height: 11.23px;
+    width: 23px;
+    height: 23px;
 }
 
 .compass-outline{
-    width: 11.23px;
-    height: 11.23px;
+    width: 23px;
+    height: 23px;
 }
 
 .heart-outline{
-    width: 11.23px;
-    height: 11.23px;
+    width: 23px;
+    height: 23px;
 }
 
 .person-outline{
-    width: 11.23px;
-    height: 11.23px;
+    width: 23px;
+    height: 23px;
+}
+
+/******************  **********************/
+@media (max-width: 935px){
+    .header{
+        display: none;
+    }
+
+    .side-bar{
+        display: none;
+    }
+}
+
+@media (max-width: 614px){
+
 }
