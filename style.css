@@ -9,6 +9,7 @@ body{
 }
 
 .header{
+    z-index: 10;
     background-color: white;
     height: 54px;
     border-bottom: 1px solid #DBDBDB;
@@ -78,7 +79,7 @@ body{
 }
 
 .content{
-    background-color: blue;
+    background-color: #FAFAFA;
     /*height: 1000px;apagar dps*/
     /*width: 914px;apagar dps*/
     display: flex;
@@ -94,7 +95,8 @@ body{
 }
 
 .stories{
-    background-color: tomato;
+    background-color: white;
+    border: 1px solid #DBDBDB;
     width: 614px;
     height: 118px;
 
@@ -107,15 +109,97 @@ body{
 
 }
 
+/****************** FEED **********************/
 .feed{
-background-color: cadetblue;
-height: 700px;/*apagar dps*/
-width: 614px;/*apagar dps*/
+
+/*height: 700px;apagar dps*/
+/*width: 614px;apagar dps*/
 margin-top: 24px;
 }
 
+.post{
+    background-color: white;
+    border: 1px solid #DBDBDB;
+    height: 749px;
+    width: 614px;
+
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.post .img-post-profile{
+    width: 32px;
+
+    position: absolute;
+    top: 15px;
+    left: 17px;
+}
+
+.post h4{
+    color: #262626;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    position: absolute;
+    top: 21px;
+    left: 64px;
+}
+
+.post .ellipsis-vertical-outline{
+    position: absolute;
+    top: 29.5px;
+    right: 28.5px;
+}
+
+.post .post-content{
+    width: 612px;
+
+    position: absolute;
+    top: 61px;
+    right: 1px;
+}
+
+.post .heart-outline{
+    position: absolute;
+    bottom: 44.44px;
+    left: 17.75px;
+}
+
+.post .chatbubble-outline{
+    position: absolute;
+    bottom: 44.44px;
+    left: 52.6px;
+}
+
+.post .paper-plane-outline{
+    position: absolute;
+    bottom: 44.44px;
+    left: 88.6px;
+}
+
+.post .bookmark-outline{
+    position: absolute;
+    bottom: 44.44px;
+    right: 44.12px;
+}
+
+.post .img-post-likes{
+    width: 20px;
+
+    position: absolute;
+    bottom: 14px;
+    left: 17px;
+}
+
+.post h5{
+    position: absolute;
+    bottom: 13px;
+    left: 42px;
+}
+
+/****************** SIDEBAR **********************/
 .side-bar{
-background-color: chartreuse;
 /*height: 300px;apagar dps*/
 width: 293px;
 margin-left: 29px;
@@ -188,10 +272,6 @@ margin-left: 29px;
     width: 32px;
 }
 
-.suggestion h4{
-    
-}
-
 .suggestion h5{
     color: #8E8E8E;
     font-size: 12px;
@@ -242,6 +322,16 @@ margin-left: 29px;
 }
 
 .person-outline{
+    width: 23px;
+    height: 23px;
+}
+
+.chatbubble-outline{
+    width: 23px;
+    height: 23px;
+}
+
+.bookmark-outline{
     width: 23px;
     height: 23px;
 }
