@@ -6,7 +6,6 @@ all z-index 0 but:
 .header: 10
 */
 
-
 body{
     background-color: #FAFAFA;
     display: flex;
@@ -17,6 +16,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/****************** HEADER **********************/
 .header{
     z-index: 10;
     background-color: white;
@@ -96,8 +96,6 @@ body{
 
 .content{
     background-color: #FAFAFA;
-    /*height: 1000px;apagar dps*/
-    /*width: 914px;apagar dps*/
     display: flex;
     margin-top: calc(55px + 34px);/* header + natural distance*/
 }
@@ -106,6 +104,7 @@ body{
     width: 56px;
 }
 
+/****************** STORIES **********************/
 .stories{
     background-color: white;
     border: 1px solid #DBDBDB;
@@ -200,6 +199,10 @@ body{
     right: 28.5px;
 }
 
+.rotated {
+    transform: rotate(90deg);
+  }
+
 .post .post-content{
     width: 612px;
 
@@ -248,7 +251,6 @@ body{
 
 /****************** SIDEBAR **********************/
 .side-bar{
-/*height: 300px;apagar dps*/
 width: 293px;
 margin-left: 29px;
 }
@@ -348,6 +350,19 @@ margin-left: 29px;
     margin-top: 18px;
 }
 
+/****************** BOTTOM BAR **********************/
+.bottom-bar{
+    background-color: white;
+    border: 1px solid #DBDBDB;
+    height: 54px;
+    width: 614px;
+    position: fixed;
+    bottom: 0px;
+
+    display: none;
+}
+
+
 /****************** ICONS **********************/
 .logo-instagram{
     width: 23px;
@@ -391,17 +406,93 @@ margin-left: 29px;
     height: 27px;
 }
 
+.bottom-bar .home{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 12px;
+    left: 27px;
+}
+
+.bottom-bar .search-outline{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 12px;
+    left: 158px;
+}
+
+.bottom-bar .add-circle-outline{
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 12px;
+    left: 297px;
+}
+
+.bottom-bar .heart-outline{
+    position: absolute;
+    top: 12px;
+    left: 435px;
+}
+
+.bottom-bar .person-outline{
+    position: absolute;
+    top: 12px;
+    left: 563px;
+}
+
 /******************  **********************/
 @media (max-width: 935px){
-    .header{
-        display: none;
-    }
-
     .side-bar{
         display: none;
     }
 }
 
 @media (max-width: 614px){
+    .inside-header{
+        width: 614px;
+    }
 
+    .inside-header .vertical-divider,
+    .inside-header .search-bar,
+    .inside-header .compass-outline,
+    .inside-header .heart-outline,
+    .inside-header .person-outline,
+    .chevron-forward-circle{
+        display: none;
+    }
+
+    .inside-header .identification{
+        width: 350px;
+        margin-left: 20px;
+    }
+
+    .interaction{
+            position: relative;
+        }
+
+    .inside-header .paper-plane-outline{
+        position: absolute;
+        right: 30px;
+    }
+
+    .content{
+        margin-top: 54px;
+    }
+
+    .feed{
+        margin-top: 0px;
+    }
+    .stories{
+        background-color: #FAFAFA;
+    }
+
+    .post{
+        background-color: white;
+    }
+
+    .bottom-bar{
+        display: inline;
+    }
 }
